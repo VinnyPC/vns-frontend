@@ -1,0 +1,142 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #515252;
+}
+
+header img {
+    height: 50px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+main {
+    background-color: #f0ece8;
+    color: black;
+}
+@media (max-width: 768px) {
+    .empilhadeira-laranja-fundo {
+        display: block;
+        width: 100%;
+        margin-top: 50px;
+    }
+}
+@media (min-width: 769px) {
+    .empilhadeira-laranja-fundo {
+        display: none;
+    }
+}
+
+.desktop-main-background {
+    display: none;
+}
+
+
+.main-text, .vantagens-container {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.main-text p , .card-vantagem p {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+.card-vantagem img{
+    max-width: 70px;
+}
+
+    .card-infos, .card-vantagem{
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #efe9df;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.vantagens-cards{
+    margin-top: 25px;
+}
+.card-infos-text, .card-vantagem div{
+    text-align: start;
+}
+.empilhadeira-icone{
+    max-width: 70px;
+}
+.contato-btn{
+    display: block;
+    width: fit-content;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #ff6600;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+@media (min-width: 769px) {
+    /* .main-text{
+        display: none;
+    } */
+     .main-text h1 {
+        display: none;
+     }
+    .contato-btn{
+        display: none;
+    }
+    .vantagens-container{
+        display: none;
+    }
+    .banner {
+  position: relative;   /* referência para o h1 ficar dentro */
+  width: 100vw;         /* ocupa a largura toda */
+}
+
+.banner img {
+  width: 100%;          /* garante que a imagem ocupe tudo */
+  height: auto;
+  display: block;
+}
+
+.banner button {
+  position: absolute;   /* faz o botão flutuar sobre a imagem */
+  top: 85%;             /* posiciona o botão */
+  left: 17%;            /* centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* ajusta o ponto de ancoragem */
+  
+  padding: 10px 20px;  /* espaçamento interno */
+  background-color: #ff6600; /* cor de fundo */
+  color: white;        /* cor do texto */
+  border: none;        /* remove borda padrão */
+  border-radius: 5px;  /* bordas arredondadas */
+  font-size: 1.2rem;   /* tamanho da fonte (ajuste conforme necessário) */
+  cursor: pointer;     /* muda o cursor ao passar por cima */
+
+}
+
+.banner h1 {
+  position: absolute;   /* faz o texto flutuar sobre a imagem */
+  top: 40%;             /* centraliza verticalmente */
+  left: 33%;            /* centraliza horizontalmente */
+  transform: translate(-50%, -50%); /* ajusta o ponto de ancoragem */
+  
+  color: white;         /* cor do texto */
+  font-size: 3rem;      /* tamanho da fonte (ajuste conforme necessário) */
+  text-align: center;
+  max-width: 50%;       /* evita que o texto ultrapasse a imagem */
+
+}
+}
+
